@@ -5,7 +5,7 @@ pipeline {
         stage ('GetProject') {
             steps {
 
-                git branch: 'main', url: 'https://github.com/brendan-galway/brendanspetitions.git'
+                git branch: 'master', url: 'https://github.com/brendan-galway/brendanspetitions.git'
 
 
             }
