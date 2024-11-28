@@ -20,7 +20,8 @@ pipeline {
         }
         stage ('Exec') {
             steps {
-                sh 'mvn exec:java'
+             //  sh 'mvn exec:java'
+                sh  'mvn exec:java -Dexec.mainClass="com.example.Main"'
             }
         }
     }
