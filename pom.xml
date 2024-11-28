@@ -59,6 +59,19 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>2.7.5</version>
+				<groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>3.5.0</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>java</goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+        <mainClass>com.example.Main</mainClass>
+      </configuration>
 			</plugin>
 		</plugins>
 	</build>
